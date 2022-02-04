@@ -9,8 +9,12 @@ function SacarResto()
 	var dividendo;
 	var divisor;
 
-	dividendo=117;
-	divisor=16;
+
+	dividendo = document.getElementById("txtIdNumeroDividendo").value;
+	dividendo = parseInt(dividendo);
+
+	divisor = document.getElementById("txtIdNumeroDivisor").value;
+	divisor = parseInt(divisor);
 
 	alert(dividendo % divisor);
 }
