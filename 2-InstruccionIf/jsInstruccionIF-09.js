@@ -1,6 +1,20 @@
+/* Violante Martín - DIV Z - IF/ELSE 09
+Al presionar el Botón, mostrar un número Random del 1 al 10 inclusive
+*/
+
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	let numeroRandom;
+	let i;
+	let maximo;
+	let minimo;
 
-}//FIN DE LA FUNCIÓN
+	maximo = 10;
+	minimo = 1;
+
+
+	numeroRandom = Math.floor(Math.random() *(maximo + 1 - minimo)) + minimo;
+
+	alert(numeroRandom);	
+
+}
