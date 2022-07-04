@@ -1,11 +1,6 @@
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var numeroIngresado;
-
-	contador=0;
-	acumulador=0;
+	v
 	
 	
 	txtIdSuma.value=acumulador;
