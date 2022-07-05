@@ -1,4 +1,5 @@
-/*Violante Martín - DIV Z 
+/*Violante Martín
+DIV E
 Ejercicio E/S 07
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
@@ -6,12 +7,12 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var numero1;
-	var numero2;
-	var resultado; 
+	let numero1;
+	let numero2;
+	let resultado; 
 
 	numero1 = document.getElementById("txtIdNumeroUno").value;
-	numero1 = parseInt(numero1); // "11" -> 11
+	numero1 = parseInt(numero1); 
 
 	numero2 = document.getElementById("txtIdNumeroDos").value;
 	numero2 = parseInt(numero2);
@@ -24,46 +25,54 @@ function sumar()
 
 function restar()
 {
-	var numero1
-	var numero2
-	var resultado
+	let numero1;
+	let numero2;
+	let resultado;
 
 	numero1 = document.getElementById("txtIdNumeroUno").value;
-	numero1 = parseInt(numero1); // "11" -> 11
+	numero1 = parseInt(numero1); 
 
 	numero2 = document.getElementById("txtIdNumeroDos").value;
 	numero2 = parseInt(numero2);
 
 	resultado = numero1 - numero2;
 
-	alert("La resta es " + resultado)
+	alert("La resta es " + resultado);
 
 
 }
 
 function multiplicar()
 { 
+	let numero1;
+	let numero2;
+	let resultado;
+
 	numero1 = document.getElementById("txtIdNumeroUno").value;
-	numero1 = parseInt(numero1); // "11" -> 11
+	numero1 = parseInt(numero1);  
 
 	numero2 = document.getElementById("txtIdNumeroDos").value;
 	numero2 = parseInt(numero2);
 
 	resultado = numero1 * numero2;
 
-	alert("La multiplicación es " + resultado)
+	alert("La multiplicación es " + resultado);
 }
 
 function dividir()
 {
+	let numero1;
+	let numero2;
+	let resultado;
+	
 	numero1 = document.getElementById("txtIdNumeroUno").value;
-	numero1 = parseInt(numero1); // "11" -> 11
+	numero1 = parseInt(numero1); 
 
 	numero2 = document.getElementById("txtIdNumeroDos").value;
 	numero2 = parseInt(numero2);
 
 	resultado = numero1 / numero2;
 
-	alert("La división es " + resultado)
+	alert("La división es " + resultado);
 }
 

@@ -1,21 +1,22 @@
-/*Violante Martín - DIV Z 
+/*Violante Martín 
+DIV E 
 Ejercicio E/S 06
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	var numero1;
-	var numero2;
-	var resultado; 
+	let numeroUno;
+	let numeroDos;
+	let resultado; 
 
-	numero1 = document.getElementById("txtIdNumeroUno").value;
-	numero1 = parseInt(numero1); // "11" -> 11
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno); // "11" -> 11
 
-	numero2 = document.getElementById("txtIdNumeroDos").value;
-	numero2 = parseInt(numero2);
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
 
-	resultado = numero1 + numero2;
+	resultado = numeroUno + numeroDos;
 
 	alert("La suma es " + resultado);
 

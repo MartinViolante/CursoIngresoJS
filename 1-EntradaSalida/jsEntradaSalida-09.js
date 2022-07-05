@@ -1,4 +1,5 @@
-/*Violante Martín - DIV Z 
+/*Violante Martín
+ DIV E
 Ejercicio E/S 09
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
@@ -6,16 +7,20 @@ mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
+	//variables
+	let sueldo;
+	let resultado;
+	let aumento;
 
-	var sueldo;
-	var resultado;
-	
-
+	//recopilación de datos
 	sueldo = document.getElementById("txtIdSueldo").value;
 	sueldo = parseInt(sueldo);
 
-	resultado = sueldo + (sueldo / 100*10);
+	//aumento
+	aumento = sueldo * (10/100);
+
+	resultado = sueldo + aumento;
 
 	document.getElementById("txtIdResultado").value = resultado;
 
-	}
+}

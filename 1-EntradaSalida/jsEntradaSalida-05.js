@@ -1,16 +1,18 @@
-/*
+/* Martín Violante 
+Div E
+Ej 05 E/S
 Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados 
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
-	var nombreIngresado;
-	var edadIngresada;
+	let nombreIngresado;
+	let edadIngresada;
 
 
-	nombreIngresado = txtIdNombre.value;
-	edadIngresada = txtIdEdad.value;
+	nombreIngresado = document.getElementById("txtIdNombre").value;
 
-	alert("Usted se llama" + " " + nombreIngresado + " " + "y tiene" + " " + edadIngresada + " " + "años");
+	edadIngresada = document.getElementById("txtIdEdad").value;
 
+	alert("Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años");
 }
 
