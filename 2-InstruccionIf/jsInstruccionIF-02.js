@@ -1,11 +1,15 @@
-/*Violante Martín - DIV Z - IF/ELSE 02
+/* Violante Martín 
+DIV E 
+IF/ELSE 02
 Al ingresar una edad debemos informar solo si la persona es mayor de edad
 */
 
 function mostrar()
 {
-	 var edad;
+	//variable
+	 let edad;
 
+	 //tomo y parseo el dato
 	 edad = document.getElementById("txtIdEdad").value;
 	 edad = parseInt(edad);
 

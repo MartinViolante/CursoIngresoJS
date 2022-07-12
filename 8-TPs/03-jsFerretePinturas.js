@@ -1,41 +1,42 @@
-/*Violante Martín - DIV Z - TP 03
+/*Violante Martín 
+ DIV E 
+ TP 03
 3.	Para el departamento de Pinturas:
 A.	Al ingresar una temperatura en Fahrenheit debemos mostrar la temperatura en Centígrados con un mensaje concatenado (ej.: " 32 Fahrenheit son 0 centígrados").
 B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en Fahrenheit (ej.: "0  centígrados son 32 Fahrenheit ").
 */
 function FahrenheitCentigrados () 
 {
-	var temperaturaF;
-	var temperaturaC;
-	var texto;
+	//variables
+	let temperaturaF;
+	let temperaturaC;
 
+	//tomo y parseo el dato
 	temperaturaF = document.getElementById("txtIdTemperatura").value;
-	temperaturaF = parseFloat(temperaturaF);
+	temperaturaF = parseInt(temperaturaF);
 
-
-
+	//convierto Fahrenheit a Centigrados
 	temperaturaC = (((temperaturaF - 32)* 5)/ 9);
 	
+	temperaturaF + " grados Fahrenheit son " + temperaturaC + " grados Centigrados";
 
-	texto = temperaturaF + " grados Fahrenheit son " + temperaturaC + " grados Centigrados";
-
-	alert(texto);
+	alert(temperaturaF + " grados Fahrenheit son " + temperaturaC + " grados Centigrados");
 
 }
 
 function CentigradosFahrenheit () 
 {
-	var temperaturaC;
-	var temperaturaF;
-	var texto;
-
+	//variables
+	let temperaturaC;
+	let temperaturaF;
+	
+	//tomo y parseo el dato
 	temperaturaC = document.getElementById("txtIdTemperatura").value;
-	temperaturaC = parseFloat(temperaturaC);
+	temperaturaC = parseInt(temperaturaC);
 
+	//convierto Centigrados a Fahrenheit 
 	temperaturaF = ((temperaturaC * 9 / 5)+ 32);
 
-	texto = temperaturaC + " grados Centigrados son " + temperaturaF + " grados Fahrenheit";
-
-	alert(texto);
+	alert(temperaturaC + " grados Centigrados son " + temperaturaF + " grados Fahrenheit");
 
 }

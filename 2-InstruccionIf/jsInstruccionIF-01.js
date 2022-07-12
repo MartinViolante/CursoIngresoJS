@@ -1,18 +1,20 @@
-/* Violante Martín - DIV Z - IF/ELSE 01
+/* Violante Martín 
+ DIV E 
+  IF/ELSE 01
 Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".
 */
 
 function mostrar()
 {
 	 
-	var edad;
+	let edad;
 
 	edad = document.getElementById("txtIdEdad").value;
 	edad = parseInt(edad);
 
 	if(edad == 15)
 	{
-		alert("niña bonita");
+		alert("Niña bonita");
 	}
 
 }

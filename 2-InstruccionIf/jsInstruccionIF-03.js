@@ -1,22 +1,28 @@
-/* Violante Martín - DIV Z - IF/ELSE 03
+/* Violante Martín 
+ DIV E
+ IF/ELSE 03
 Al ingresar una edad debemos informar si la persona es mayor de edad, sino informar que es un menor de edad.
 */
 
 function mostrar()
 {
+	//variable
 	let edad;
 
+	//tomo y parseo el dato
 	edad = document.getElementById("txtIdEdad").value;
 	edad = parseInt(edad);
 
+	//primer condición
 	if (edad >= 18)
 	{
-		alert("Es mayor de edad")
+		alert("Usted es mayor de edad")
 	}
 
+	//segunda condición
 	else
 	{
-		alert("Es menor de edad")
+		alert("Usted es menor de edad")
 	}
 
 }
